@@ -208,6 +208,13 @@ paths:
     get:
       summary: View detail on credential
       deprecated: false
+      parameters:
+        - name: token
+          in: path
+          type: string
+          required: true
+          description: The credential token.
+          default: test
       responses:
         '200':
           description: Expected response of credential
